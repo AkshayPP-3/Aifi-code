@@ -15,9 +15,9 @@ window.PRODUCTS = [
     id: 1,
     name: "Wireless Headphones",
     description: "High-fidelity wireless headphones with noise cancellation.",
-    price: 129.99,
+    price: 900,
     category: "Electronics",
-    image_url: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80", // Headphones
+    image_url: "https://img.freepik.com/premium-photo/photo-wireless-headphones_1029469-18128.jpg", // Headphones
     embedding: randomEmbedding()
   },
   {
@@ -26,7 +26,7 @@ window.PRODUCTS = [
     description: "Track your fitness and notifications with this stylish smart watch.",
     price: 199.99,
     category: "Electronics",
-    image_url: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80", // Smart Watch
+    image_url: "https://m.media-amazon.com/images/I/716Jq5LJKsL._AC_SL1500_.jpg", // Smart Watch
     embedding: randomEmbedding()
   },
   {
@@ -35,7 +35,7 @@ window.PRODUCTS = [
     description: "Lightweight running shoes for all terrains.",
     price: 89.99,
     category: "Footwear",
-    image_url: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80", // Running Shoes
+    image_url: "https://media.istockphoto.com/id/1249496770/photo/running-shoes.jpg?b=1&s=170667a&w=0&k=20&c=xKzV4mPrvaeWWVMR8CCTMXTGCz431pydZvlMn0WxOyw=", // Running Shoes
     embedding: randomEmbedding()
   },
   {
@@ -44,7 +44,7 @@ window.PRODUCTS = [
     description: "Portable speaker with deep bass and long battery life.",
     price: 59.99,
     category: "Electronics",
-    image_url: "https://images.unsplash.com/photo-1512446733611-9099a758e0c2?auto=format&fit=crop&w=400&q=80", // Bluetooth Speaker
+    image_url: "https://th.bing.com/th/id/OIP.JPBYf__vC8QEH5FVhr7VBwHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", // Bluetooth Speaker
     embedding: randomEmbedding()
   },
   {
@@ -53,7 +53,7 @@ window.PRODUCTS = [
     description: "Eco-friendly yoga mat with non-slip surface.",
     price: 29.99,
     category: "Fitness",
-    image_url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80", // Yoga Mat
+    image_url: "https://i5.walmartimages.com/seo/BalanceFrom-All-Purpose-1-2-In-High-Density-Foam-Exercise-Yoga-Mat-Anti-Tear-with-Carrying-Strap-Pink_fa04e66e-2348-4c65-827c-d1e502e993c8_3.0bd06bf524cfa140e05da0dd6ca26f4a.jpeg", // Yoga Mat
     embedding: randomEmbedding()
   },
   {
@@ -62,7 +62,7 @@ window.PRODUCTS = [
     description: "Brew the perfect cup with this programmable coffee maker.",
     price: 79.99,
     category: "Home Appliances",
-  image_url: "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80", // Coffee Maker
+  image_url: "https://i5.walmartimages.com/seo/Mr-Coffee-5-Cup-Programmable-Coffee-Maker-25-oz-Mini-Brew-Black_972164db-9b9b-42e2-9463-80f40fb360e3.2423b7d6d6d77ec31ed140a0cece9662.jpeg", // Coffee Maker
     embedding: randomEmbedding()
   },
   {
@@ -71,7 +71,7 @@ window.PRODUCTS = [
     description: "Ergonomic mouse with customizable buttons and RGB lighting.",
     price: 49.99,
     category: "Electronics",
-  image_url: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80", // Gaming Mouse
+  image_url: "https://th.bing.com/th/id/OIP.VReOyAiTw3TjtDJXAonv8gAAAA?w=114&h=104&c=7&bgcl=2507bb&r=0&o=6&dpr=1.3&pid=13.1", // Gaming Mouse
     embedding: randomEmbedding()
   },
   {
@@ -80,7 +80,7 @@ window.PRODUCTS = [
     description: "Durable backpack with multiple compartments for travel.",
     price: 39.99,
     category: "Accessories",
-  image_url: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80", // Backpack
+  image_url: "https://www.bing.com/th?id=OPAC.oOOu%2fOYZUPw1QQ474C474&o=5&pid=21.1&w=128&h=188&rs=1&qlt=100&dpr=1.3&o=2&bw=6&bc=FFFFFF", // Backpack
     embedding: randomEmbedding()
   },
   {
@@ -89,7 +89,7 @@ window.PRODUCTS = [
     description: "UV-protected sunglasses with modern design.",
     price: 24.99,
     category: "Accessories",
-  image_url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80", // Sunglasses
+  image_url: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/vincent-chase-vc-s16529-c2-sunglasses_img_9304_15_12_2023.jpg", // Sunglasses
     embedding: randomEmbedding()
   },
   {
@@ -98,7 +98,7 @@ window.PRODUCTS = [
     description: "Insulated water bottle keeps drinks cold for 24 hours.",
     price: 19.99,
     category: "Fitness",
-  image_url: "https://images.unsplash.com/photo-1524594154908-edd3600fa3b3?auto=format&fit=crop&w=400&q=80", // Water Bottle
+  image_url: "https://www.milton.in/cdn/shop/files/51kJYER4sQL._SL1500.jpg?v=1754028639&width=900", // Water Bottle
     embedding: randomEmbedding()
   },
   {
@@ -107,7 +107,7 @@ window.PRODUCTS = [
     description: "Adjustable stand for ergonomic laptop use.",
     price: 34.99,
     category: "Electronics",
-  image_url: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80", // Laptop Stand
+  image_url: "https://m.media-amazon.com/images/I/61-phH8oaIL._AC_SL1300_.jpg", // Laptop Stand
     embedding: randomEmbedding()
   },
   {
@@ -116,7 +116,7 @@ window.PRODUCTS = [
     description: "LED desk lamp with touch controls and dimming.",
     price: 22.99,
     category: "Home Appliances",
-  image_url: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // Desk Lamp
+  image_url: "https://th.bing.com/th/id/OIP.Jd4kz-yZjKFZKaVWyxM4cAHaHa?w=245&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", // Desk Lamp
     embedding: randomEmbedding()
   },
   {
@@ -125,7 +125,7 @@ window.PRODUCTS = [
     description: "Monitor your health stats with this sleek fitness tracker.",
     price: 59.99,
     category: "Fitness",
-  image_url: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80", // Fitness Tracker
+  image_url: "https://th.bing.com/th/id/OIP.AUt5ucfZqr3mpL6Ny5jJzgHaHa?w=170&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", // Fitness Tracker
     embedding: randomEmbedding()
   },
   {
@@ -134,7 +134,7 @@ window.PRODUCTS = [
     description: "Fast wireless charging pad for smartphones.",
     price: 27.99,
     category: "Electronics",
-  image_url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80", // Wireless Charger
+  image_url: "https://th.bing.com/th/id/OIP.Zl1eiRpxWVif6J7E680i4QHaHU?w=185&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", // Wireless Charger
     embedding: randomEmbedding()
   },
   {
@@ -143,7 +143,7 @@ window.PRODUCTS = [
     description: "Spill-proof travel mug for hot and cold drinks.",
     price: 14.99,
     category: "Accessories",
-  image_url: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80", // Travel Mug
+  image_url: "https://th.bing.com/th/id/OIP.zdJtJc9ydv3_0CB8-oXiwAHaHa?w=179&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", // Travel Mug
     embedding: randomEmbedding()
   },
   {
@@ -152,7 +152,7 @@ window.PRODUCTS = [
     description: "Charge your devices on the go with this compact power bank.",
     price: 25.99,
     category: "Electronics",
-  image_url: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // Power Bank
+  image_url: "https://th.bing.com/th?id=OPAC.VqY6usv%2bzCFI4w474C474&w=406&h=406&o=5&dpr=1.3&pid=21.1", // Power Bank
     embedding: randomEmbedding()
   },
   {
@@ -161,7 +161,7 @@ window.PRODUCTS = [
     description: "True wireless earbuds with long battery life.",
     price: 79.99,
     category: "Electronics",
-  image_url: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=400&q=80", // Wireless Earbuds
+  image_url: "https://th.bing.com/th/id/OIP.Tgc7i704RjxEki5L7ZqiAgHaHA?w=218&h=206&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3", // Wireless Earbuds
     embedding: randomEmbedding()
   },
   {
@@ -170,7 +170,7 @@ window.PRODUCTS = [
     description: "Control your home's temperature remotely.",
     price: 129.99,
     category: "Home Appliances",
-  image_url: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80", // Smart Thermostat
+  image_url: "https://th.bing.com/th/id/OIP.q7gYnTDHy_x1vnXgo0MzewHaEH?w=197&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3", // Smart Thermostat
     embedding: randomEmbedding()
   },
   {
@@ -179,7 +179,7 @@ window.PRODUCTS = [
     description: "Set of resistance bands for strength training.",
     price: 17.99,
     category: "Fitness",
-  image_url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80", // Resistance Bands
+  image_url: "https://th.bing.com/th/id/OIP.V0iOt75RwfxhBYPDs6MT5wHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7", // Resistance Bands
     embedding: randomEmbedding()
   },
   {
@@ -188,7 +188,7 @@ window.PRODUCTS = [
     description: "Rechargeable toothbrush for deep cleaning.",
     price: 49.99,
     category: "Home Appliances",
-  image_url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80", // Electric Toothbrush
+  image_url: "https://th.bing.com/th/id/OIP.Gc0Au8sS_vjDosJ44p-6OgHaHa?w=177&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3", // Electric Toothbrush
     embedding: randomEmbedding()
   }
 ];
@@ -252,45 +252,15 @@ async function getImageEmbedding(imgElement) {
 }
 
 async function findSimilarProductsByImage(file) {
+  // Local image similarity search (demo mode)
   const img = document.createElement('img');
   img.src = URL.createObjectURL(file);
   await new Promise(resolve => { img.onload = resolve; });
   const imgEmbedding = await getImageEmbedding(img);
-
-  // For each product, get its image embedding using MobileNet
-  async function getProductEmbedding(product) {
-    return new Promise(resolve => {
-      const productImg = document.createElement('img');
-      productImg.crossOrigin = 'anonymous';
-      productImg.src = product.image_url;
-      productImg.onload = async () => {
-        const emb = await getImageEmbedding(productImg);
-        resolve(emb);
-      };
-      productImg.onerror = () => resolve(null);
-    });
-  }
-
-  // Compute embeddings for all products
-  const productEmbeddings = await Promise.all(window.PRODUCTS.map(getProductEmbedding));
-
-  // Compare uploaded image embedding with each product image embedding
-  function cosineSimilarity(a, b) {
-    let dot = 0, normA = 0, normB = 0;
-    for (let i = 0; i < Math.min(a.length, b.length); i++) {
-      dot += a[i] * b[i];
-      normA += a[i] * a[i];
-      normB += b[i] * b[i];
-    }
-    return dot / (Math.sqrt(normA) * Math.sqrt(normB));
-  }
-
   const results = window.PRODUCTS.map((product, idx) => ({
     ...product,
-    score: productEmbeddings[idx] ? cosineSimilarity(imgEmbedding, productEmbeddings[idx]) : 0
+    score: product.embedding ? cosineSimilarity(imgEmbedding, product.embedding) : 0
   })).sort((a, b) => b.score - a.score);
-
-  // Show top 5 similar products
   renderProducts(results.slice(0, 5));
 }
 
@@ -354,11 +324,21 @@ function filterProducts() {
     filtered = filtered.filter(p => p.category === categorySelect.value);
   }
   if (!demoMode && searchInput.value.trim()) {
-    // AI-powered semantic search
-    const qEmb = queryEmbedding(searchInput.value.trim());
-    filtered = filtered.map(p => ({...p, score: cosineSimilarity(qEmb, p.embedding)}))
-      .sort((a,b) => b.score - a.score)
-      .filter(p => p.score > 0.2); // threshold for demo
+    // Simple JS search: filter by keyword and price
+    const keyword = searchInput.value.trim().toLowerCase();
+    let priceLimit = null;
+    const priceMatch = keyword.match(/(?:below|under|less than)\s*(\d+)/);
+    if (priceMatch) {
+      priceLimit = parseFloat(priceMatch[1]);
+    }
+    let filtered = PRODUCTS.filter(p =>
+      p.name.toLowerCase().includes(keyword) ||
+      p.description.toLowerCase().includes(keyword)
+    );
+    if (priceLimit !== null) {
+      filtered = filtered.filter(p => p.price <= priceLimit);
+    }
+    return filtered.length > 0 ? filtered : PRODUCTS;
   }
   if (demoMode && uploadedImage) {
     // AI-powered image search
@@ -371,6 +351,45 @@ function filterProducts() {
 }
 
 // --- Render Product Grid ---
+// --- Wishlist & Cart State ---
+function getWishlist() {
+  return JSON.parse(localStorage.getItem('wishlist') || '[]');
+}
+function setWishlist(arr) {
+  localStorage.setItem('wishlist', JSON.stringify(arr));
+}
+function getCart() {
+  return JSON.parse(localStorage.getItem('cart') || '[]');
+}
+function setCart(arr) {
+  localStorage.setItem('cart', JSON.stringify(arr));
+}
+
+function updateHeaderCounts() {
+  const wishlistCount = getWishlist().length;
+  const cartCount = getCart().length;
+  let wishlistBtn = document.getElementById('headerWishlistIcon');
+  let cartBtn = document.getElementById('headerCartIcon');
+  if (wishlistBtn && wishlistBtn.parentElement) {
+    let badge = wishlistBtn.parentElement.querySelector('.wishlist-badge');
+    if (!badge) {
+      badge = document.createElement('span');
+      badge.className = 'wishlist-badge bg-pink-500 text-white rounded-full px-2 py-0.5 text-xs ml-1';
+      wishlistBtn.parentElement.appendChild(badge);
+    }
+    badge.textContent = wishlistCount > 0 ? wishlistCount : '';
+  }
+  if (cartBtn && cartBtn.parentElement) {
+    let badge = cartBtn.parentElement.querySelector('.cart-badge');
+    if (!badge) {
+      badge = document.createElement('span');
+      badge.className = 'cart-badge bg-blue-500 text-white rounded-full px-2 py-0.5 text-xs ml-1';
+      cartBtn.parentElement.appendChild(badge);
+    }
+    badge.textContent = cartCount > 0 ? cartCount : '';
+  }
+}
+
 function renderProducts(products) {
   productGrid.innerHTML = '';
   if (products.length === 0) {
@@ -380,19 +399,41 @@ function renderProducts(products) {
   }
   productGrid.classList.remove('hidden');
   emptyState.classList.add('hidden');
+  const wishlist = getWishlist();
+  const cart = getCart();
   products.forEach(p => {
     const card = document.createElement('div');
-    card.className = 'product-card bg-white rounded-lg shadow hover:shadow-lg transition flex flex-col items-center p-4 cursor-pointer focus:outline-none';
+    card.className = 'product-card bg-white rounded-lg shadow hover:shadow-lg transition flex flex-col items-center p-4 focus:outline-none relative';
     card.tabIndex = 0;
     card.setAttribute('role', 'button');
     card.setAttribute('aria-label', `View details for ${p.name}`);
+    const inWishlist = wishlist.includes(p.id);
+    const inCart = cart.includes(p.id);
     card.innerHTML = `
-      <img src="${p.image_url}" alt="${p.name}" class="w-24 h-24 object-cover rounded mb-2" />
+      <img src="${p.image_url}" alt="${p.name}" class="w-24 h-24 object-cover rounded mb-2 cursor-pointer" />
       <div class="font-semibold text-gray-800 text-lg">${p.name}</div>
-  <div class="text-blue-600 font-bold text-md mb-1">₹${p.price.toFixed(2)}</div>
+      <div class="text-blue-600 font-bold text-md mb-1">₹${p.price.toFixed(2)}</div>
       <div class="text-gray-500 text-sm mb-2">${p.category}</div>
+      <div class="flex gap-3 mt-2">
+        <button class="wishlist-btn" title="Add to Wishlist" aria-label="Add to Wishlist">
+          ${inWishlist
+            ? '<svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart text-pink-600"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-.5.5-.5-.5a5.5 5.5 0 0 0-7.8 7.8l.5.5L12 21.3l7.8-8.4.5-.5a5.5 5.5 0 0 0 0-7.8z"></path></svg>'
+            : '<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart text-pink-500 hover:text-pink-700"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0l-.5.5-.5-.5a5.5 5.5 0 0 0-7.8 7.8l.5.5L12 21.3l7.8-8.4.5-.5a5.5 5.5 0 0 0 0-7.8z"></path></svg>'}
+        </button>
+        <button class="cart-btn" title="Add to Cart" aria-label="Add to Cart">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart ${inCart ? 'text-blue-600' : 'text-blue-500'} hover:text-blue-700"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6"></path></svg>
+        </button>
+        <button class="buy-btn px-3 py-1 rounded bg-green-500 text-white font-semibold hover:bg-green-600 transition" title="Buy Now" aria-label="Buy Now">Buy Now</button>
+      </div>
     `;
-    card.addEventListener('click', () => {
+    // Buy Now button click
+    card.querySelector('.buy-btn').addEventListener('click', e => {
+      e.stopPropagation();
+      setCart([p.id]);
+      window.location.href = 'cart.html';
+    });
+    // Product image and name click: go to details
+    card.querySelector('img').addEventListener('click', () => {
       window.location.href = `product.html?id=${p.id}`;
     });
     card.addEventListener('keydown', e => {
@@ -400,8 +441,35 @@ function renderProducts(products) {
         window.location.href = `product.html?id=${p.id}`;
       }
     });
+    // Wishlist button click
+    card.querySelector('.wishlist-btn').addEventListener('click', e => {
+      e.stopPropagation();
+      let wl = getWishlist();
+      if (wl.includes(p.id)) {
+        wl = wl.filter(id => id !== p.id);
+      } else {
+        wl.push(p.id);
+      }
+      setWishlist(wl);
+      renderProducts(products);
+      updateHeaderCounts();
+    });
+    // Cart button click
+    card.querySelector('.cart-btn').addEventListener('click', e => {
+      e.stopPropagation();
+      let ct = getCart();
+      if (ct.includes(p.id)) {
+        ct = ct.filter(id => id !== p.id);
+      } else {
+        ct.push(p.id);
+      }
+      setCart(ct);
+      renderProducts(products);
+      updateHeaderCounts();
+    });
     productGrid.appendChild(card);
   });
+  updateHeaderCounts();
 }
 
 // --- Loading Skeletons ---
@@ -526,3 +594,21 @@ function refreshProducts() {
 
 // --- Initial Render ---
 refreshProducts();
+updateHeaderCounts();
+// Header wishlist/cart click handlers
+document.addEventListener('DOMContentLoaded', function() {
+  const wishlistHeaderBtn = document.getElementById('headerWishlistIcon')?.parentElement;
+  const cartHeaderBtn = document.getElementById('headerCartIcon')?.parentElement;
+  if (wishlistHeaderBtn) {
+    wishlistHeaderBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open('wishlist.html', '_blank');
+    });
+  }
+  if (cartHeaderBtn) {
+    cartHeaderBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open('cart.html', '_blank');
+    });
+  }
+});

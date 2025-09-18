@@ -1,3 +1,9 @@
+/* Add Bodoni MT font style */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap');
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bodoni Moda', 'Bodoni MT', serif;
+}
 /* Custom modal animation */
 #modalOverlay {
   animation: fadeIn 0.3s;
