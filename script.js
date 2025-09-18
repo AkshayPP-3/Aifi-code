@@ -313,14 +313,24 @@ function filterProducts() {
     filtered = filtered.filter(p => p.category === categorySelect.value);
   }
   if (!demoMode && searchInput.value.trim()) {
-    // Simple JS search: filter by keyword and price
-    const keyword = searchInput.value.trim().toLowerCase();
+    // Enhanced search: support 'shoe under 1000' and similar queries
+    const query = searchInput.value.trim().toLowerCase();
+    let keyword = query;
     let priceLimit = null;
-    const priceMatch = keyword.match(/(?:below|under|less than)\s*(\d+)/);
+    // Match phrases like 'shoe under 1000', 'shoes below 500', etc.
+    const priceRegex = /(\w+)\s*(?:under|below|less than)\s*(\d+)/;
+    const priceMatch = query.match(priceRegex);
     if (priceMatch) {
-      priceLimit = parseFloat(priceMatch[1]);
+      keyword = priceMatch[1];
+      priceLimit = parseFloat(priceMatch[2]);
+    } else {
+      // Fallback: match 'under 1000' or 'below 500'
+      const onlyPrice = query.match(/(?:under|below|less than)\s*(\d+)/);
+      if (onlyPrice) {
+        priceLimit = parseFloat(onlyPrice[1]);
+      }
     }
-    let filtered = PRODUCTS.filter(p =>
+    filtered = PRODUCTS.filter(p =>
       p.name.toLowerCase().includes(keyword) ||
       p.description.toLowerCase().includes(keyword)
     );
@@ -419,7 +429,7 @@ function renderProducts(products) {
     card.querySelector('.buy-btn').addEventListener('click', e => {
       e.stopPropagation();
       setCart([p.id]);
-      window.location.href = 'cart.html';
+      window.location.href = 'checkout.html';
     });
     // Product image and name click: go to details
     card.querySelector('img').addEventListener('click', () => {
