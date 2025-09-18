@@ -9,6 +9,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- TensorFlow.js and MobileNet for AI image similarity -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.16.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0"></script>
 </head>
 
 <body class="bg-gray-50 min-h-screen flex flex-col">
@@ -23,6 +26,8 @@
         <svg id="demoIcon" width="20" height="20"></svg>
         <span id="demoText">Demo Mode: Search</span>
       </button>
+      <a href="auth.html" class="px-4 py-1 rounded bg-blue-600 text-white hover:bg-blue-700 transition font-semibold">Login</a>
+      <a href="auth.html" class="px-4 py-1 rounded bg-green-600 text-white hover:bg-green-700 transition font-semibold">Sign Up</a>
     </div>
   </header>
 
@@ -56,10 +61,12 @@
         </select>
         <label for="priceRange" class="ml-2 text-gray-700 text-sm">Max Price:</label>
         <input id="priceRange" type="range" min="0" max="200" value="200" class="ml-2" aria-label="Filter by Price">
-        <span id="priceValue" class="ml-1 text-gray-700 text-sm">$200</span>
+  <span id="priceValue" class="ml-1 text-gray-700 text-sm">₹200</span>
         <span class="ml-2 text-gray-400"><svg id="filterIcon" width="20" height="20"></svg></span>
       </div>
     </div>
+    <!-- Category Navigation Bar -->
+    <nav id="categoryNav" class="flex flex-wrap gap-2 justify-center mb-6"></nav>
 
     <!-- Upload Image (Demo Mode) -->
     <div id="uploadSection" class="hidden flex flex-col items-center gap-4 mb-6">
@@ -110,6 +117,23 @@
     lucide.createIcon('wand2').replace(document.getElementById('demoIcon'));
     lucide.createIcon('x').replace(document.getElementById('closeIcon'));
     lucide.createIcon('packageSearch').replace(document.getElementById('emptyIcon'));
+
+    // Modal logic
+    const loginBtn = document.getElementById('loginBtn');
+    const signupBtn = document.getElementById('signupBtn');
+    const loginModal = document.getElementById('loginModal');
+    const signupModal = document.getElementById('signupModal');
+    const closeLogin = document.getElementById('closeLogin');
+    const closeSignup = document.getElementById('closeSignup');
+
+    loginBtn.onclick = () => { loginModal.classList.remove('hidden'); };
+    signupBtn.onclick = () => { signupModal.classList.remove('hidden'); };
+    closeLogin.onclick = () => { loginModal.classList.add('hidden'); };
+    closeSignup.onclick = () => { signupModal.classList.add('hidden'); };
+
+    // Optional: close modal on outside click
+    loginModal.addEventListener('click', e => { if (e.target === loginModal) loginModal.classList.add('hidden'); });
+    signupModal.addEventListener('click', e => { if (e.target === signupModal) signupModal.classList.add('hidden'); });
   </script>
 </body>
 </html>
