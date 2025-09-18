@@ -1,3 +1,14 @@
+// Show username/account in header if logged in
+window.addEventListener('DOMContentLoaded', function() {
+  var username = localStorage.getItem('username');
+  if (username) {
+    var header = document.querySelector('header .flex.items-center.gap-2');
+    var userSpan = document.createElement('span');
+    userSpan.textContent = '👤 ' + username;
+    userSpan.className = 'ml-4 text-blue-700 font-semibold';
+    header.appendChild(userSpan);
+  }
+});
 // --- Mock Product Data with Embeddings ---
 window.PRODUCTS = [
   {

@@ -71,6 +71,46 @@
       loginSection.classList.remove('hidden');
       signupSection.classList.add('hidden');
     };
+
+    // Login form submit
+    document.getElementById('loginForm').onsubmit = async function(e) {
+      e.preventDefault();
+      const username = document.getElementById('loginUser').value.trim();
+      const password = document.getElementById('loginPass').value;
+      try {
+        const res = await fetch('http://localhost:3001/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'Login failed');
+        localStorage.setItem('username', username);
+        window.location.href = 'index.html';
+      } catch (err) {
+        alert(err.message);
+      }
+    };
+
+    // Signup form submit
+    document.getElementById('signupForm').onsubmit = async function(e) {
+      e.preventDefault();
+      const username = document.getElementById('signupUser').value.trim();
+      const password = document.getElementById('signupPass').value;
+      try {
+        const res = await fetch('http://localhost:3001/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || 'Signup failed');
+        localStorage.setItem('username', username);
+        window.location.href = 'index.html';
+      } catch (err) {
+        alert(err.message);
+      }
+    };
   </script>
 </body>
 </html>
