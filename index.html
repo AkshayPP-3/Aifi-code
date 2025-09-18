@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Product Finder</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/npm/lucide-static/icons/search.svg" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="w-full bg-white shadow flex items-center justify-between px-4 py-3">
+    <div class="flex items-center gap-2">
+      <svg id="logo" width="32" height="32" class="text-blue-600" aria-label="Logo"></svg>
+      <span class="font-bold text-xl text-gray-800">AI Product Finder</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <button id="demoToggle" class="flex items-center gap-1 px-3 py-1 rounded bg-blue-100 text-blue-700 hover:bg-blue-200 transition" aria-label="Toggle Demo Mode">
+        <svg id="demoIcon" width="20" height="20"></svg>
+        <span id="demoText">Demo Mode: Search</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="w-full max-w-3xl mx-auto mt-8 text-center">
+    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">Find Products Faster with <span class="text-blue-600">AI Search</span></h1>
+    <p class="text-gray-600 mb-4">Semantic search and recommendations powered by mock AI embeddings. Try text or image search!</p>
+    <div class="flex justify-center">
+      <div class="bg-blue-50 rounded px-4 py-2 text-blue-700 text-sm flex items-center gap-2">
+        <svg id="infoIcon" width="18" height="18"></svg>
+        <span>Results ranked by semantic similarity (AI-powered). In production, we’d use real NLP/image models.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main App -->
+  <main class="flex-1 w-full max-w-5xl mx-auto px-2 md:px-6 py-6">
+    <!-- Search & Filters -->
+    <div id="searchFilters" class="flex flex-col md:flex-row gap-4 items-center mb-6">
+      <div class="flex-1 w-full">
+        <label for="searchInput" class="sr-only">Search Products</label>
+        <div class="relative">
+          <input id="searchInput" type="text" placeholder="Search products (e.g. running shoes below 1000)" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg" aria-label="Search Products">
+          <span class="absolute right-3 top-2.5 text-gray-400"><svg id="searchIcon" width="22" height="22"></svg></span>
+        </div>
+      </div>
+      <div class="flex gap-2 items-center">
+        <label for="categorySelect" class="sr-only">Category</label>
+        <select id="categorySelect" class="px-3 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Filter by Category">
+          <option value="">All Categories</option>
+        </select>
+        <label for="priceRange" class="ml-2 text-gray-700 text-sm">Max Price:</label>
+        <input id="priceRange" type="range" min="0" max="200" value="200" class="ml-2" aria-label="Filter by Price">
+        <span id="priceValue" class="ml-1 text-gray-700 text-sm">$200</span>
+        <span class="ml-2 text-gray-400"><svg id="filterIcon" width="20" height="20"></svg></span>
+      </div>
+    </div>
+
+    <!-- Upload Image (Demo Mode) -->
+    <div id="uploadSection" class="hidden flex flex-col items-center gap-4 mb-6">
+      <div class="w-full max-w-md">
+        <label class="block text-gray-700 font-medium mb-2">Upload Product Image</label>
+        <div id="dropArea" class="flex flex-col items-center justify-center border-2 border-dashed border-blue-400 rounded-lg p-6 bg-blue-50 cursor-pointer transition hover:bg-blue-100" tabindex="0" aria-label="Drag and drop image or click to upload">
+          <svg id="uploadIcon" width="36" height="36" class="mb-2 text-blue-500"></svg>
+          <span class="text-blue-700">Drag & drop or click to select image</span>
+          <input id="imageInput" type="file" accept="image/*" class="hidden" aria-label="Upload Image">
+        </div>
+        <div id="imagePreview" class="mt-4 hidden">
+          <img src="" alt="Uploaded preview" class="w-32 h-32 object-cover rounded shadow">
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <section id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></section>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4"></div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="flex flex-col items-center justify-center mt-12 hidden">
+      <svg id="emptyIcon" width="64" height="64" class="text-gray-300 mb-4"></svg>
+      <span class="text-gray-500 text-lg">No products found. Try a different search or filter.</span>
+    </div>
+  </main>
+
+  <!-- Product Modal -->
+  <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+    <div id="modalContent" class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
+      <button id="closeModal" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600" aria-label="Close Modal">
+        <svg id="closeIcon" width="24" height="24"></svg>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+  <script>
+    lucide.createIcons();
+    lucide.createIcon('search').replace(document.getElementById('searchIcon'));
+    lucide.createIcon('filter').replace(document.getElementById('filterIcon'));
+    lucide.createIcon('upload').replace(document.getElementById('uploadIcon'));
+    lucide.createIcon('info').replace(document.getElementById('infoIcon'));
+    lucide.createIcon('image').replace(document.getElementById('logo'));
+    lucide.createIcon('wand2').replace(document.getElementById('demoIcon'));
+    lucide.createIcon('x').replace(document.getElementById('closeIcon'));
+    lucide.createIcon('packageSearch').replace(document.getElementById('emptyIcon'));
+  </script>
+</body>
+</html>
