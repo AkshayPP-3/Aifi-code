@@ -32,7 +32,16 @@
     // Use PRODUCTS from script.js
     const product = window.PRODUCTS ? window.PRODUCTS.find(p => p.id == productId) : null;
     if (product) {
-      document.getElementById('productImage').src = product.image_url;
+      // Use local images for demo products if name matches
+      let localImage = null;
+      if (product.name.toLowerCase().includes('laptop')) {
+        localImage = 'images/laptop.jpg';
+      } else if (product.name.toLowerCase().includes('phone')) {
+        localImage = 'images/phone.jpg';
+      } else if (product.name.toLowerCase().includes('headphone')) {
+        localImage = 'images/headphones.jpg';
+      }
+      document.getElementById('productImage').src = localImage || product.image_url;
       document.getElementById('productName').textContent = product.name;
       document.getElementById('productCategory').textContent = product.category;
   document.getElementById('productPrice').textContent = `₹${product.price.toFixed(2)}`;
